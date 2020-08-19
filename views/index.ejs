@@ -1,0 +1,18 @@
+<%- include('header') %>
+    <% if(entries.length) { %>
+        <% entries.forEach((entry)=>{ %>
+            <div class="panel">
+                <p class="panel-title"><%= entry.tit %></p>
+                <p class="panel-time"><%= entry.publish %></p>
+            </div>
+            <div class="panel-body">
+                <p class="content"><%= entry.content %></p>
+            </div>
+        <% }) %>
+    <% } else{ %>
+        <div>
+            <!-- <p class="def">No Story in here!</p>
+            <a href="/new-entry">Add one!</a> -->
+        </div>
+    <% } %>
+<%- include('footer') %>

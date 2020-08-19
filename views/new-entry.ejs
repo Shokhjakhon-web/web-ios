@@ -1,0 +1,16 @@
+<%- include('header') %>
+<h2>Write a new story</h2>
+<form method="POST" role="form">
+    <p class="text">
+        <label for="title">Title</label></br>
+        <input type="text" name="tit" id="tit" required placeholder="Story title">
+    </p>
+    <p class="textarea">    
+        <label for="content">Story text</label></br>
+        <textarea name="content" id="content" cols="30" rows="10" placeholder="Love Epress! It's a great tool for building websites" required></textarea>
+    </p>
+    <p class="submit">
+        <input type="submit" value="Submit" class='submit'>
+    </p>
+</form>
+<%- include('footer') %>

@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 15px;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/mai.jpg");
+}
+.container header {
+  justify-content: space-between;
+  display: flex;
+  background-color: chocolate;
+  border-radius: 5px;
+}
+.container header h1 {
+  color: black;
+  padding-top: 7px;
+  padding-left: 5px;
+  font-family: monospace;
+}
+.container header .write {
+  border-radius: 5px;
+  padding: 0px 7px;
+  background-color: white;
+}
+.container header .write a {
+  text-decoration: none;
+  display: flex;
+}
+.container header .write a span {
+  display: inline-block;
+}
+.container header .write a span img {
+  width: 50px;
+  height: 50px;
+}
+.container header .write a p {
+  color: black;
+  line-height: 50px;
+  font-style: oblique;
+}
+.container h2 {
+  text-align: center;
+  color: black;
+  width: 85%;
+  margin: 10px auto;
+  background: white;
+  border-radius: 3px;
+  font-family: cursive;
+}
+.container form {
+  font-size: 25px;
+}
+.container form .text {
+  width: 84%;
+  margin: 0 auto;
+}
+.container form .text ::placeholder {
+  color: black;
+}
+.container form .text input[type=text] {
+  width: 100%;
+  padding-left: 1px;
+  font-size: 19px;
+  padding: 5px;
+  font-family: cursive;
+  padding-left: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid red;
+}
+.container form .textarea {
+  width: 84%;
+  margin: 0 auto;
+}
+.container form .textarea ::placeholder {
+  color: black;
+}
+.container form .textarea textarea {
+  width: 100%;
+  padding-left: 1px;
+  font-size: 19px;
+  padding-left: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid red;
+}
+.container form .submit {
+  width: 26%;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  padding: 0px;
+}
+.container form .submit input {
+  width: 100%;
+  font-size: 19px;
+  padding: 3px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-family: cursive;
+  border-bottom: 2px solid red;
+}
+.container .panel {
+  display: flex;
+}
+.container .panel .panel-title {
+  width: 50%;
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 2px;
+  padding: 8px;
+  font-family: monospace;
+  font-weight: bolder;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+.container .panel .panel-time {
+  width: 50%;
+  text-align: right;
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 2px;
+  padding: 8px;
+  font-family: monospace;
+  font-weight: bolder;
+}
+.container .panel-body .content {
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  border-radius: 2px;
+  padding: 8px;
+  font-family: monospace;
+  word-break: break-all;
+}
+
+@media screen and (min-width: 200px) and (max-width: 425px) {
+  .container header h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+  .container header .write a {
+    padding-top: 7px;
+  }
+  .container header .write a p {
+    line-height: normal;
+    padding-top: 8px;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
